@@ -1,0 +1,61 @@
+
+
+button {
+
+    width: 100px;
+    height: 50px;
+}
+
+p {
+    width: 20vw;
+}
+
+.grid-buttons-container {
+    display: grid;
+    grid-template-columns: 1fr 5vw 1fr;
+    
+    gap: 5px;              
+}
+
+.grid-button {
+    background-color: #333333;
+    color: #fff;
+    border-radius: 8px;
+    height: 5vh;
+    width: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    justify-self: flex-end;
+    align-self: center;
+
+}
+.right {
+    display: flex;
+    justify-self: flex-start;
+    align-self: center;
+}
+
+.center {
+    display: flex;
+    flex-direction: column; 
+    justify-self: center;
+    height: 100%;
+}
+
+.grid-button:hover {
+    background-color: #676767;
+    
+}
+
+.justify-button-container {
+
+    display: flex;
+    justify-content: center;
+}
+
+

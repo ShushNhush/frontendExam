@@ -1,0 +1,27 @@
+
+
+.count-box {
+
+    display: flex;
+
+    width: 40px;
+    height: 40px;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #333;
+    color: #fff;
+    
+    font-size: 28px;
+
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.effect-demo {
+
+display: flex;
+flex-direction: column;
+gap: 5px;
+
+}

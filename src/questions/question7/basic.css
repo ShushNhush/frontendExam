@@ -1,0 +1,42 @@
+
+
+
+.form-display {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 10PX;
+
+    width: 250px;
+    height: 30px;
+    border: 1px solid #333;
+    background-color: #ebebeb;
+}
+
+.example-header {
+
+    display: flex;
+    justify-content: center;
+}
+
+.example-button {
+
+    border: 1px solid #333;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+
+.example-button:hover {
+    background-color: #eaeaea;
+  }
+  
+  .example-button.active {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+  }
