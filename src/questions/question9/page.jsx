@@ -23,28 +23,24 @@ import { StepBack } from "lucide-react";
 
 const nestedRoutes = `
 \`\`\` javascript
-<Routes>
-  <Route path="dashboard" element={<Dashboard />}>
-    <Route index element={<Home />} />
-    <Route path="settings" element={<Settings />} />
-  </Route>
-</Routes>
+<Route path='/q9' element={<Q9/>}>
+      <Route path='/q9/dashboard' element={<Dashboard/>}/>
+      <Route path='/q9/about' element={<About/>}/>
+    </Route>
 \`\`\`
 `;
 
 const outletSnippet = `
 \`\`\` javascript 
-import { Outlet } from "react-router";
 
-export default function Dashboard() {
-  return (
-    <div>
-      <h1>Dashboard</h1>
-      {/* will either be <Home/> or <Settings/> */}
-      <Outlet />
-    </div>
-  );
-}
+  <Link to="/q9">Home</Link> |
+        
+  <Link to="/q9/dashboard">Dashboard</Link> |
+        
+  <Link to="/q9/about">About</Link>
+        
+          <Outlet />
+                
 \`\`\` 
 `
 
