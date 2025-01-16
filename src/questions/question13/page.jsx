@@ -226,6 +226,16 @@ function PageComponent() {
     }
   };
 
+  const handleCopy = async () => {
+    const jwt = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJvbGl2ZXIiLCJyb29tTnVtYmVyIjo3NjA0LCJpc3MiOiJHdWRiZXJnc2VuIiwiaWQiOjksImV4cCI6MTczNjI2MTgzMCwiaWF0IjoxNzM2MjU4MjMwfQ.Z-bKWxVUtkfKqTyBLo3PfKW5xJRjDJheLWzHA4kstAI"
+    try {
+      await navigator.clipboard.writeText(jwt);
+      alert("Copied to clipboard!");
+    } catch (err) {
+      console.error("Failed to copy:", err);
+    }
+  };
+
   return (
     <>
       <Page>
